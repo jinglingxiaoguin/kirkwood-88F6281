@@ -62,7 +62,7 @@
 +	mvsw61xx {
 +		compatible = "marvell,88e6171";
 +		status = "okay";
-+		reg = <0x10>;
++		reg = <0x1>;
 +
 +		mii-bus = <&mdio>;
 +		cpu-port-0 = <5>;
