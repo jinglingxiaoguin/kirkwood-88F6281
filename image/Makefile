@@ -11,7 +11,7 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/image.mk
 
 KERNEL_LOADADDR:=0x8000
-TARGET_DEVICES = linksys-audi linksys-viper dockstar goflexnet goflexhome iconnect pogo_e02 butong ib62x0
+TARGET_DEVICES = linksys-audi linksys-viper dockstar goflexnet goflexhome iconnect pogo_e02 net110 ib62x0
 
 UBI_OPTS := -m 2048 -p 128KiB -s 512
 UBIFS_OPTS := -m 2048 -e 126KiB -c 4096
@@ -86,10 +86,10 @@ $(Device/dockstar)
   DEVICE_DTS := kirkwood-pogo_e02
 endef
 
-define Device/butong
+define Device/net110
 $(Device/dockstar)
-  DEVICE_TITLE := BUTONGWIFI for Marvell 88F6281
-  DEVICE_DTS := kirkwood-butong
+  DEVICE_TITLE := SURFILTER NET110
+  DEVICE_DTS := kirkwood-surfilter-net110
 endef
 
 define Device/ib62x0
