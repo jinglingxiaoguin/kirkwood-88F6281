@@ -38,7 +38,7 @@ kirkwood_board_detect() {
 		;;
 
 	"BUTONGWIFI for Marvell 88F6281")
-		name="butong"
+		name="NET110"
 		;;
 
 	"Linksys EA3500")
