@@ -14,8 +14,8 @@ get_status_led() {
 	pogo_e02)
 		status_led="pogo_e02:orange:fault"
 		;;
-	butong)
-		status_led="butong:orange:sata"
+	net110)
+		status_led="net110:orange:sata"
 		;;
 	linksys-audi)
 		status_led="audi:green:power"
