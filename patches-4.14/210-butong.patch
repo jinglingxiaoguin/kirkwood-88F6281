@@ -4,12 +4,12 @@
  	kirkwood-openrd-client.dtb \
  	kirkwood-openrd-ultimate.dtb \
 	kirkwood-pogo_e02.dtb \
-+	kirkwood-butong.dtb \
++	kirkwood-surfilter-net110.dtb \
 	kirkwood-pogoplug-series-4.dtb \
  	kirkwood-rd88f6192.dtb \
  	kirkwood-rd88f6281-z0.dtb \
 --- /dev/null
-+++ b/arch/arm/boot/dts/kirkwood-butong.dts
++++ b/arch/arm/boot/dts/kirkwood-surfilter-net110.dts
 @@ -0,0 +1,154 @@
 +/*
 + * kirkwood-pogo_e02.dts - Device tree file for Pogoplug E02
@@ -31,8 +31,8 @@
 +#include "kirkwood-6281.dtsi"
 +
 +/ {
-+	model = "BUTONGWIFI for Marvell 88F6281";
-+	compatible = "butongwifi,butong", "cloudengines,pogoe02", "marvell,kirkwood-88f6281",
++	model = "SURFILTER NET110";
++	compatible = "surfilter,net110", "cloudengines,pogoe02", "marvell,kirkwood-88f6281",
 +		     "marvell,kirkwood";
 +
 +	memory {
@@ -49,12 +49,12 @@
 +		compatible = "gpio-leds";
 +
 +		health {
-+			label = "butong:green:health";
++			label = "net110:green:health";
 +			gpios = <&gpio1 16 GPIO_ACTIVE_LOW>;
 +			default-state = "keep";
 +		};
 +		sata {
-+			label = "butong:orange:sata";
++			label = "net110:orange:sata";
 +			gpios = <&gpio1 17 GPIO_ACTIVE_LOW>;
 +		};
 +	};
@@ -132,7 +132,7 @@
 +	};
 +
 +	partition@500000 {
-+		label = "butongwifi";
++		label = "surfilter";
 +		reg = <0x0500000 0x6000000>;
 +	};
 +
