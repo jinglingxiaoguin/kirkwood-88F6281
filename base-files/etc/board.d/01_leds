@@ -35,7 +35,7 @@ case "$board" in
 	ucidef_set_led_default "health" "health" "pogo_e02:green:health" "1"
 	ucidef_set_led_default "fault" "fault" "pogo_e02:orange:fault" "1"
 	;;
-"butong")
+"NET110")
 	ucidef_set_led_default "health" "health" "butong:green:health" "1"
 	ucidef_set_led_default "sata" "sata" "butong:orange:fault" "1"
 	;;
