@@ -37,8 +37,8 @@ kirkwood_board_detect() {
 		name="pogo_e02"
 		;;
 
-	"BUTONGWIFI for Marvell 88F6281")
-		name="NET110"
+	"SURFILTER NET110")
+		name="net110"
 		;;
 
 	"Linksys EA3500")
