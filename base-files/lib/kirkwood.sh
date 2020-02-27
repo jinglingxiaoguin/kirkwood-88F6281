@@ -37,7 +37,7 @@ kirkwood_board_detect() {
 		name="pogo_e02"
 		;;
 
-	"SURFILTER")
+	"SURFILTER NET110")
 		name="net110"
 		;;
 
